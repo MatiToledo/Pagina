@@ -1,0 +1,397 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins";
+}
+
+.seccion-uno {
+  width: 100%;
+  height: 616px;
+  background: url(./imagenes/puntitos.png);
+}
+
+.header {
+  width: 100%;
+  height: 86px;
+  padding: 18px 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 796px) {
+  .header {
+    height: 181px;
+    padding: 36px 82px;
+  }
+}
+
+.logo-header {
+  width: 50px;
+  height: 50px;
+}
+@media (min-width: 796px) {
+  .logo-header {
+    width: 109px;
+    height: 109px;
+  }
+}
+
+.menu-mobile {
+  width: 36px;
+  height: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+@media (min-width: 796px) {
+  .menu-mobile {
+    display: none;
+  }
+}
+
+.rect-menu {
+  width: 36px;
+  height: 6px;
+  background-color: rgb(58, 58, 58);
+}
+
+.menu-desktop {
+  display: none;
+}
+@media (min-width: 796px) {
+  .menu-desktop {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+  }
+  .a-menu {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 24px;
+  }
+}
+
+.main {
+  height: 530px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+@media (min-width: 796px) {
+  .main {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 435px;
+    padding: 0 82px;
+    align-items: flex-end;
+  }
+}
+
+.h1-main {
+  width: 318px;
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+  line-height: 48px;
+  margin-bottom: 58px;
+}
+@media (min-width: 796px) {
+  .h1-main {
+    margin-bottom: 260px;
+  }
+}
+
+.img-main {
+  width: 318px;
+  height: 300px;
+}
+@media (min-width: 796px) {
+  .img-main {
+    width: 435px;
+    height: 395px;
+  }
+}
+
+.seccion-dos {
+  margin: 0 auto;
+  background-color: #141414;
+  color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+@media (min-width: 796px) {
+  .seccion-dos {
+    flex-direction: row-reverse;
+  }
+}
+
+.contenedor-texto-presentacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 796px) {
+  .contenedor-texto-presentacion {
+    align-items: flex-start;
+    align-content: space-between;
+    padding: 90px;
+  }
+}
+
+.h2-presentacion {
+  margin: 0;
+  font-size: 32px;
+  line-height: 44px;
+  padding-top: 55px;
+  padding-bottom: 52px;
+}
+@media (min-width: 796px) {
+  .h2-presentacion {
+    font-size: 32px;
+    padding: 0;
+  }
+}
+
+.p-presentacion {
+  font-size: 16px;
+  line-height: 19px;
+  padding: 0 31px;
+  margin: 0;
+}
+@media (min-width: 796px) {
+  .p-presentacion {
+    font-size: 32px;
+    padding: 0;
+    font-size: 16px;
+    padding: 28px 0;
+    max-width: 532px;
+  }
+}
+
+.img-presentacion {
+  margin: 60px;
+  width: 80px;
+  height: 80px;
+}
+@media (min-width: 796px) {
+  .img-presentacion {
+    width: 211px;
+    height: 211px;
+    margin: 0;
+  }
+}
+
+.seccion-tres {
+  background-color: #fafafa;
+  width: 100%;
+}
+
+.h3-servicios {
+  color: #2c2c2c;
+  font-size: 32px;
+  text-align: center;
+  font-weight: 700;
+  padding-top: 70px;
+  padding-bottom: 50px;
+  margin: 0;
+}
+@media (min-width: 796px) {
+  .h3-servicios {
+    font-size: 48px;
+  }
+}
+
+.contenedor-general-servicios {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 796px) {
+  .contenedor-general-servicios {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.contenedor-particular-servicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 109px;
+}
+
+.img-servicio {
+  width: 138px;
+  height: 128px;
+}
+
+.h4-servicio {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 18px;
+  margin-bottom: 15px;
+}
+
+.p-servicio {
+  margin: 0;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  padding: 0 50px;
+  text-align: center;
+}
+
+.seccion-form {
+  background-color: #141414;
+  width: 100%;
+  color: #fafafa;
+}
+@media (min-width: 796px) {
+  .seccion-form {
+    display: flex;
+    flex-direction: row;
+    padding: 100px 0;
+    justify-content: center;
+  }
+}
+
+.h5-form {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  padding-top: 70px;
+  padding-bottom: 37px;
+}
+@media (min-width: 796px) {
+  .h5-form {
+    font-size: 48px;
+    padding: 0;
+    max-width: 270px;
+    margin-right: 70px;
+  }
+}
+
+.contenedor-general-form {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 796px) {
+  .contenedor-general-form {
+    width: 100%;
+    max-width: 376px;
+  }
+}
+
+.fieldset {
+  display: grid;
+  gap: 9px;
+  grid-template-rows: auto auto;
+  padding: 20px;
+}
+
+.label {
+  font-size: 13px;
+}
+
+.input-text,
+.textarea {
+  font-family: "Poppins";
+  font-size: 16px;
+  border: none;
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+.input-text {
+  height: 45px;
+}
+
+.textarea {
+  height: 113px;
+  resize: none;
+}
+
+.button-section {
+  padding: 60px 20px;
+}
+
+.button {
+  width: 100%;
+  background-color: #f9c31a;
+  font-size: 16px;
+  font-family: "Poppins";
+  font-weight: 700;
+  color: #141414;
+  border: none;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.seccion-footer {
+  background-color: #dbdbdb;
+  width: 100%;
+  padding-bottom: 100px;
+}
+@media (min-width: 796px) {
+  .seccion-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+  }
+}
+
+.contenedor-logo {
+  display: grid;
+  padding: 53px 20px;
+  gap: 18px;
+}
+
+.logo-footer {
+  width: 77px;
+  height: 77px;
+}
+
+.copyright {
+  color: #2c2c2c;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.contenedor-general-social {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 796px) {
+  .contenedor-general-social {
+    padding: 0 100px;
+    justify-content: center;
+  }
+}
+
+.contenedor-social {
+  padding: 15px;
+  width: auto;
+}
+
+.img-social {
+  width: 27px;
+  height: 27px;
+}
+
+.a-social {
+  font-size: 16px;
+  font-weight: 400;
+  color: #141414;
+  text-decoration: none;
+  padding-left: 8px;
+}
